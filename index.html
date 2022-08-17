@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form TOP</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <aside>
+          <div class="header">
+            <img src="images/odin-lined.png" alt="Logo the odin project" class="logo"/>
+            <h2 class="title">ODIN</h2>
+          </div>
+        </aside>
+        <div class="info">
+          <p class="info-text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <p class="info-text">You know you want to.</p>
+        </div>
+        <form action="#">
+          <fieldset class="data">
+            <h1>Let's do this!</h1>
+            <div class="inputs">
+              <ul>
+                <li>
+                  <label for="firs-nam" >first name</label>
+                  <input id="firs-name" type="text" placeholder="Thor" />
+                </li>
+              
+                <li>
+                  <label for="email">Email</label>
+                  <input id="email" type="email" placeholder="oding@asgard.com" />
+                </li>
+              
+                </li>
+                <li>
+                  <label for="password">Password</label>
+                  <input class="password" id="password" type="password" required/>
+                  <span></span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <label for="last-name">last name</label>
+                  <input id=" last-name" type="text" placeholder="Odinson" />
+                </li>
+                <li>
+                  <label for="phone">Phone number</label>
+                  <input id="phone" type="tel" placeholder="55555555" />
+                <li>
+                  <label for="confirm-password">Confirm Password</label>
+                  <input class="password" id="confirm-password" type="password" required/>
+                  <span></span>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="buttons">
+            <button type="submit">Create account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url(fonts/Norse-Bold.otf); 
+}
+
+
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+   
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: 2fr 1fr 2fr;
+    height: 100vh; 
+}
+
+aside{
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.webp);
+    background-size: cover;
+    grid-row: 1/-1;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    margin-top: 120px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.info{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 4.9rem 2rem;
+    gap: 24px;
+    
+    
+}
+
+.info-text{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+
+form{
+    background-color: #F9FAFB;
+}
+
+.data{
+    border: none;
+    padding :2rem 2rem;
+    box-shadow: 0 4px 2px -2px gray;
+}
+.inputs{
+    display: flex;
+    gap: 2rem;
+    margin-top: 20px;
+    
+}
+
+fieldset h1{
+    font-size: 20px;
+}
+
+label{
+    text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+    
+}
+
+input{
+    font-family: inherit;
+    border-radius: 5px;
+    border-color:#E5E7EB;
+    padding:.5rem 1rem;
+    ;
+}
+
+input:focus{
+    outline-color: blueviolet;
+}
+.password + span{
+    position: relative;
+}
+.password:invalid{
+    border-color: red;
+}
+
+.password:invalid + span::after{
+    content: "*Error";
+    font-size: 12px;
+    position: absolute;
+    color: red;
+    left: -219px;
+    bottom: -25px;
+}
+
+
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.buttons{
+    border: none;
+    background-color: #eee;
+    padding: 2rem 2rem;
+}
+
+button{
+    border-radius: 5px;
+    padding: .7rem 3rem;
+    border: none;
+    background-color: #596D48;
+    font-family: inherit;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+}
